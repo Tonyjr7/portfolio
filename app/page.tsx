@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="relative w-32 h-32 md:w-40 md:h-40">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-secondary blur-sm opacity-70"></div>
                   <img
-                    src="profile pic.jpg"
+                    src="Anthony Triumph.png"
                     alt="Profile Picture"
                     className="relative w-full h-full object-cover rounded-full border-2 border-primary/30 p-1"
                   />
