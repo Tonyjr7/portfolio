@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Anthony Triumph | Backend Engineer",
-  description: "Portfolio of Anthony Triumph, a backend engineer specializing in building robust, scalable systems.",
+  description: "Anthony Triumph, a backend engineer specializing in building robust, scalable systems.",
     generator: ''
 }
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system">
           {children}
         </ThemeProvider>
       </body>

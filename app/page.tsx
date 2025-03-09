@@ -1,3 +1,4 @@
+"use client";
 import { Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
@@ -5,8 +6,12 @@ import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import SkillBadge from "@/components/skill-badge"
 import ExperienceItem from "@/components/experience-item"
+import { useTheme } from "next-themes"
+import { Moon, Sun } from "lucide-react"
+
 
 export default function Home() {
+  const { theme, setTheme } = useTheme()
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
@@ -32,6 +37,9 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-2">
+            <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} variant="ghost" size="icon">
+              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/Tonyjr7" target="_blank">
                 <Github className="h-5 w-5" />
