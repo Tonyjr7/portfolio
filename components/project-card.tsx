@@ -1,19 +1,32 @@
-import { Github } from "lucide-react"
-import Link from "next/link"
+import { Github } from "lucide-react";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import SkillBadge from "./skill-badge"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import SkillBadge from "./skill-badge";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  technologies: string[]
-  githubUrl: string
-  liveUrl?: string
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl?: string;
 }
 
-export default function ProjectCard({ title, description, technologies, githubUrl, liveUrl }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  description,
+  technologies,
+  githubUrl,
+  liveUrl,
+}: ProjectCardProps) {
   return (
     <Card className="flex flex-col h-full border-secondary/20 bg-card/80 backdrop-blur-sm">
       <CardHeader>
@@ -28,7 +41,12 @@ export default function ProjectCard({ title, description, technologies, githubUr
         </div>
       </CardContent>
       <CardFooter className="flex gap-2">
-        <Button variant="outline" size="sm" asChild className="border-secondary/30 hover:border-secondary/80">
+        <Button
+          variant="outline"
+          size="sm"
+          asChild
+          className="border-secondary/30 hover:border-secondary/80"
+        >
           <Link href={githubUrl} target="_blank">
             <Github className="mr-2 h-4 w-4" />
             View Code
@@ -47,6 +65,5 @@ export default function ProjectCard({ title, description, technologies, githubUr
         )}
       </CardFooter>
     </Card>
-  )
+  );
 }
-
