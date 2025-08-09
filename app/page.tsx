@@ -178,7 +178,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <ProjectCard
                 title="FilmPeek"
-                description="ilmPeek is a full-stack movie application that allows users to discover trending, popular, and top-rated movies, search for specific titles, manage a list of favorite movies, and create custom watchlists."
+                description="FilmPeek is a full-stack movie application that allows users to discover trending, popular, and top-rated movies, search for specific titles, manage a list of favorite movies, and create custom watchlists."
                 technologies={[
                   "Python",
                   "FastAPI",
@@ -233,7 +233,7 @@ export default function Home() {
                 title="Founding Fullstack Engineer"
                 company="GoalGate"
                 period="2025 - Present"
-                description="Contributed to building scalable backend systems and AI-powered features like real-time communication, live transcription, and LLM integration at Outbound.im, using WebSockets, Google's Speech-to-Text API, and CI/CD best practices."
+                description="As a Founding Engineer at GoalGate, I design and build end-to-end web applications that deliver seamless user experiences and robust backend functionality. My work involves developing and maintaining scalable systems using modern technologies across both the frontend and backend."
                 technologies={[
                   "Python",
                   "Django",
