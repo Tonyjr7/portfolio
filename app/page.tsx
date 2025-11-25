@@ -180,14 +180,27 @@ export default function Home() {
                 title="FilmPeek"
                 description="FilmPeek is a full-stack movie application that allows users to discover trending, popular, and top-rated movies, search for specific titles, manage a list of favorite movies, and create custom watchlists."
                 technologies={[
-                  "Python",
-                  "FastAPI",
-                  "IAM Policy",
-                  "Telex.im",
+                  "JavaScript",
+                  "Express.js",
+                  "React",
+                  "MongoDB",
                   "AWS",
                 ]}
                 githubUrl="https://github.com/Tonyjr7/FilmPeek"
                 liveUrl="https://filmpeek.vercel.app/"
+              />
+              <ProjectCard
+                title="AI Resume Analyzer"
+                description="An intelligent FastAPI-powered application that analyzes resumes using AI to extract key information, evaluate job match scores, and provide actionable improvement suggestions."
+                technologies={[
+                  "Python",
+                  "FastAPI",
+                  "AI",
+                  "React",
+                  "HuggingFace",
+                ]}
+                liveUrl="https://match-skill-ai.vercel.app/"
+                githubUrl="https://github.com/Tonyjr7/AI-RESUME-ANALYZER"
               />
               <ProjectCard
                 title="AWS Spend Monitor"
@@ -200,6 +213,18 @@ export default function Home() {
                   "AWS",
                 ]}
                 githubUrl="https://github.com/Tonyjr7/aws-spend-monitor"
+              />
+              <ProjectCard
+                title="AI Job Extractor"
+                description="A Chrome browser extension that uses AI to extract job information from web pages and automatically saves it to Google Sheets. Built with a Node.js proxy server that interfaces with Groq's AI API."
+                technologies={[
+                  "JavaScript",
+                  "Node.js",
+                  "AI",
+                  "Chrome Extension",
+                  "GroQ",
+                ]}
+                githubUrl="https://github.com/Tonyjr7/AI-EXTENSION-PROXY"
               />
               <ProjectCard
                 title="Outbound AI"
