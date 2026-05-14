@@ -264,11 +264,10 @@ export default function Home() {
                   "Python",
                   "JavaScript",
                   "Django",
-                  "ExpressJS"
+                  "ExpressJS",
                   "PostgreSQL",
                   "Redis",
                   "React",
-                  "JavaScript",
                 ]}
               />
               <ExperienceItem
