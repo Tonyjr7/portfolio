@@ -135,13 +135,12 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2">
                   <SkillBadge name="Python" glow />
                   <SkillBadge name="JavaScript" glow />
-                  <SkillBadge name="SQL" glow />
-                  <SkillBadge name="Dart" glow />
                 </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold">Frameworks & Tools</h3>
                 <div className="flex flex-wrap gap-2">
+                  <SkillBadge name="ExpressJS" glow />
                   <SkillBadge name="Djano Rest Framwork" glow />
                   <SkillBadge name="Django" glow />
                   <SkillBadge name="FastAPI" glow />
@@ -158,12 +157,12 @@ export default function Home() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   <SkillBadge name="PostgreSQL" glow />
-                  <SkillBadge name="SQLite" glow />
+                  <SkillBadge name="MongoDB" glow />
                   <SkillBadge name="Redis" glow />
                   <SkillBadge name="AWS" glow />
                   <SkillBadge name="GCP" glow />
                   <SkillBadge name="CI/CD" glow />
-                  <SkillBadge name="Terraform" glow />
+                  <SkillBadge name="LiteLLM" glow />
                 </div>
               </div>
             </div>
@@ -219,7 +218,7 @@ export default function Home() {
                 description="A Chrome browser extension that uses AI to extract job information from web pages and automatically saves it to Google Sheets. Built with a Node.js proxy server that interfaces with Groq's AI API."
                 technologies={[
                   "JavaScript",
-                  "Node.js",
+                  "ExpressJS",
                   "AI",
                   "Chrome Extension",
                   "GroQ",
@@ -231,7 +230,9 @@ export default function Home() {
                 description="AI call campaign for businesses."
                 technologies={[
                   "Python",
+                  "JavaScript",
                   "FastAPI",
+                  "ExpressJS",
                   "AWS S3",
                   "Redshift",
                   "Grafana",
@@ -255,13 +256,15 @@ export default function Home() {
             </h2>
             <div className="max-w-3xl mx-auto space-y-10">
               <ExperienceItem
-                title="Founding Fullstack Engineer"
+                title="Backend Engineer"
                 company="GoalGate"
-                period="2025 - Present"
+                period="FEB 2023 – PRESENT"
                 description="As a Founding Engineer at GoalGate, I design and build end-to-end web applications that deliver seamless user experiences and robust backend functionality. My work involves developing and maintaining scalable systems using modern technologies across both the frontend and backend."
                 technologies={[
                   "Python",
+                  "JavaScript",
                   "Django",
+                  "ExpressJS"
                   "PostgreSQL",
                   "Redis",
                   "React",
@@ -269,12 +272,14 @@ export default function Home() {
                 ]}
               />
               <ExperienceItem
-                title="Apprentice Backend Engineer"
+                title="Backend Engineer(Contract)"
                 company="Outbound AI"
-                period="2025 - Present"
+                period="JAN 2024 – DEC 2024"
                 description="Contributed to building scalable backend systems and AI-powered features like real-time communication, live transcription, and LLM integration at Outbound.im, using WebSockets, Google's Speech-to-Text API, and CI/CD best practices."
                 technologies={[
                   "Python",
+                  "JavaScript",
+                  "ExpressJS",
                   "FastAPI",
                   "PostgreSQL",
                   "Redis",
@@ -285,9 +290,11 @@ export default function Home() {
               <ExperienceItem
                 title="Backend Engineer Intern"
                 company="HNG"
-                period="2024 - 2025"
+                period="JUN 2023 – SEP 2023"
                 description="As a Backend Engineer Intern at HNG, I contributed to building and optimizing backend systems, improving performance, and ensuring seamless API integrations."
                 technologies={[
+                  "ExpressJS",
+                  "JavaScript",
                   "FastAPI",
                   "Python",
                   "PostgreSQL",
